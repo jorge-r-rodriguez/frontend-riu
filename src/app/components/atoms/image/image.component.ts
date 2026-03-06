@@ -1,0 +1,27 @@
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-image',
+  standalone: true,
+  imports: [CommonModule],
+  template: `
+    <div class="a-image relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-img-placeholder font-figtree font-bold tracking-normal text-text-over-img" [ngClass]="containerClass">
+      <span *ngIf="!src" class="a-image__placeholder absolute z-10 text-text-img-placeholder uppercase leading-none">IMAGE</span>
+      <img *ngIf="src" [src]="src" [alt]="alt" class="a-image__img relative z-20 h-full w-full object-cover" loading="lazy" />
+      <div class="a-image__overlay pointer-events-none absolute inset-0 z-30 flex h-full w-full flex-col justify-end">
+        <div class="pointer-events-auto w-full">
+           <ng-content></ng-content>
+        </div>
+      </div>
+    </div>
+  `,
+  styles: [`
+    /* BEM Block: a-image */
+  `]
+})
+export class ImageComponent {
+  @Input() src: string = '';
+  @Input() alt: string = 'Placeholder image';
+  @Input() containerClass: string = '';
+}
