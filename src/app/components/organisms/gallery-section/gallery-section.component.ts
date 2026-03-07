@@ -39,12 +39,13 @@ import { GalleryCardComponent } from '../../molecules/gallery-card/gallery-card.
             aria-label="Galería destacada"
             class="flex w-full gap-8 overflow-x-auto snap-x snap-mandatory"
           >
-            <li
-              *ngFor="let item of galleryCards"
-              class="shrink-0 snap-start list-none"
-            >
-              <app-gallery-card></app-gallery-card>
-            </li>
+            @for (item of galleryCards; track item) {
+              <li
+                class="shrink-0 snap-start list-none"
+              >
+                <app-gallery-card></app-gallery-card>
+              </li>
+            }
           </ul>
         </div>
       </div>

@@ -34,13 +34,14 @@ import { SearchInputComponent } from '../../atoms/search-input/search-input.comp
           aria-label="Listado de noticias"
           class="o-news-section__grid grid grid-cols-1 gap-8 xs:grid-cols-1 md:grid-cols-2 desktop:grid-cols-3"
         >
-          <li
-            *ngFor="let item of newsCards"
-            class="list-none"
-            [ngClass]="item.visibility"
-          >
-            <app-news-card [title]="item.title"></app-news-card>
-          </li>
+          @for (item of newsCards; track item.title + item.visibility) {
+            <li
+              class="list-none"
+              [ngClass]="item.visibility"
+            >
+              <app-news-card [title]="item.title"></app-news-card>
+            </li>
+          }
         </ul>
       </div>
     </section>

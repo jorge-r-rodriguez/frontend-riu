@@ -10,22 +10,24 @@ import { CommonModule } from '@angular/common';
       class="a-image relative flex h-full w-full flex-col items-center justify-center overflow-hidden bg-img-placeholder font-figtree font-bold tracking-normal text-text-over-img"
       [ngClass]="containerClass"
     >
-      <span
-        *ngIf="!src"
-        aria-hidden="true"
-        class="a-image__placeholder absolute z-10 text-text-img-placeholder uppercase leading-none"
-        >IMAGE</span
-      >
-      <img
-        *ngIf="src"
-        [src]="src"
-        [attr.srcset]="srcset || null"
-        [attr.sizes]="sizes || null"
-        [alt]="alt"
-        class="a-image__img relative z-20 h-full w-full object-cover"
-        [loading]="loading"
-        decoding="async"
-      />
+      @if (!src) {
+        <span
+          aria-hidden="true"
+          class="a-image__placeholder absolute z-10 text-text-img-placeholder uppercase leading-none"
+          >IMAGE</span
+        >
+      }
+      @if (src) {
+        <img
+          [src]="src"
+          [attr.srcset]="srcset || null"
+          [attr.sizes]="sizes || null"
+          [alt]="alt"
+          class="a-image__img relative z-20 h-full w-full object-cover"
+          [loading]="loading"
+          decoding="async"
+        />
+      }
       <div
         class="a-image__overlay pointer-events-none absolute inset-0 z-30 flex h-full w-full flex-col justify-end"
       >
