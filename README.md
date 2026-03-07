@@ -1,59 +1,105 @@
-# Frontend Challenge
+# Frontend RIU
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.1.
+Maquetacion del challenge de RIU desarrollada con Angular y Tailwind CSS.
 
-## Development server
+## Demo
 
-To start a local development server, run:
+https://jorge-r-rodriguez.github.io/frontend-riu/
+
+Repositorio:
+
+https://github.com/jorge-r-rodriguez/frontend-riu
+
+## Stack
+
+- Angular 21
+- Tailwind CSS 4
+- TypeScript
+
+## Tecnicas y metodologias aplicadas
+
+- Angular standalone
+- Atomic Design
+- BEM
+- Mobile First
+- Responsive design
+- Design tokens con Tailwind
+- HTML semantico
+- Accesibilidad y teclado
+- Assets estaticos
+- Tipografias locales
+- Deploy en GitHub Pages
+
+## Detalle de implementacion
+
+- Componentes standalone y composicion reutilizable en Angular
+- Estructura `atoms`, `molecules` y `organisms`
+- Convencion BEM en clases de componentes
+- Enfoque mobile first para construir desde resoluciones pequenas hacia desktop
+- Breakpoints y tokens centralizados en `src/styles.css`
+- Uso de `@theme` en Tailwind para colores, fuentes, sombras y breakpoints
+- Etiquetas semanticas como `main`, `section`, `header`, `article`, `ul` y `li`
+- Mejora de foco visible, labels, `aria-labelledby` y skip link
+- Assets estaticos servidos desde `public/`
+- Tipografias locales cargadas con `@font-face`
+- Publicacion en GitHub Pages usando `angular-cli-ghpages`
+
+## Objetivo
+
+Implementar la interfaz del challenge respetando la estructura visual del diseno, los breakpoints definidos y una base correcta de semantica, accesibilidad y navegacion por teclado.
+
+## Instalacion
 
 ```bash
-ng serve
+npm install
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## Desarrollo
 
 ```bash
-ng generate component component-name
+npm start
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+La aplicacion se sirve por defecto en:
+
+```text
+http://localhost:4200/
+```
+
+## Build
 
 ```bash
-ng generate --help
+npm run build
 ```
 
-## Building
+La salida de produccion se genera en:
 
-To build the project run:
+```text
+dist/challenge-riu/browser
+```
+
+## Scripts disponibles
 
 ```bash
-ng build
+npm start
+npm run build
+npm run watch
+npm test
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+## Estructura del proyecto
 
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
+```text
+src/
+  app/
+    components/
+      atoms/
+      molecules/
+      organisms/
 ```
 
-## Running end-to-end tests
+## Notas
 
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Los assets estaticos se sirven desde `public/`.
+- Las tipografias locales se cargan desde `public/assets/fonts`.
+- GitHub Pages publica desde la rama `gh-pages`.
