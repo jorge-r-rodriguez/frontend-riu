@@ -8,7 +8,7 @@ import { ImageComponent } from '../../atoms/image/image.component';
   imports: [CommonModule, ImageComponent],
   template: `
     <article
-      class="m-gallery-card relative h-94.5 w-71 overflow-hidden rounded-lg xs:h-94.5 xs:w-71 md:h-120 md:w-90 desktop:h-120.5 desktop:w-[361.5px]"
+      class="m-gallery-card relative overflow-hidden rounded-lg w-71 xs:w-71 md:w-90 desktop:w-[361.5px] h-94.5 xs:h-94.5 md:h-120 desktop:h-120.5"
     >
       <app-image [containerClass]="'rounded-lg'">
         <div
@@ -26,15 +26,21 @@ import { ImageComponent } from '../../atoms/image/image.component';
               {{ description }}
             </p>
           </header>
-          <div
+          <button
+            type="button"
             class="m-gallery-card__link flex flex-row items-center gap-1 text-white"
           >
             <span
               class="inline-block text-base leading-6 font-bold tracking-normal"
               >Lorem ipsum</span
             >
-            <img src="assets/image/download.svg" alt="Download Icon" class="h-6 w-6" />
-          </div>
+            <img
+              src="assets/image/download.svg"
+              alt=""
+              aria-hidden="true"
+              class="size-6"
+            />
+          </button>
         </div>
       </app-image>
     </article>

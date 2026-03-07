@@ -9,7 +9,8 @@ import { CommonModule } from '@angular/common';
     <div class="a-date-badge flex gap-2">
       <img
         src="assets/image/calendar.svg"
-        alt="Calendar Icon"
+        alt=""
+        aria-hidden="true"
         class="a-date-badge__icon size-6"
       />
       <span

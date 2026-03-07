@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Thin.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-Thin.ttf') format('truetype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-ExtraLight.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Light.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Medium.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -64,7 +64,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-SemiBold.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -72,7 +72,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
@@ -80,7 +80,7 @@
 
 @font-face {
   font-family: 'Inter';
-  src: url('/fonts/inter/Inter-Black.ttf') format('truetype');
+  src: url('/assets/fonts/inter/Inter-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
   font-display: swap;
@@ -88,7 +88,7 @@
 
 @font-face {
   font-family: 'Figtree';
-  src: url('/fonts/fig-tree/Figtree-Regular.ttf') format('truetype');
+  src: url('/assets/fonts/fig-tree/Figtree-Regular.ttf') format('truetype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -96,7 +96,7 @@
 
 @font-face {
   font-family: 'Figtree';
-  src: url('/fonts/fig-tree/Figtree-Medium.ttf') format('truetype');
+  src: url('/assets/fonts/fig-tree/Figtree-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -104,7 +104,7 @@
 
 @font-face {
   font-family: 'Figtree';
-  src: url('/fonts/fig-tree/Figtree-SemiBold.ttf') format('truetype');
+  src: url('/assets/fonts/fig-tree/Figtree-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -112,7 +112,7 @@
 
 @font-face {
   font-family: 'Figtree';
-  src: url('/fonts/fig-tree/Figtree-Bold.ttf') format('truetype');
+  src: url('/assets/fonts/fig-tree/Figtree-Bold.ttf') format('truetype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;

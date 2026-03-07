@@ -8,14 +8,14 @@ import { ImageComponent } from '../../atoms/image/image.component';
   standalone: true,
   imports: [CommonModule, DateBadgeComponent, ImageComponent],
   template: `
-    <article class="m-news-card flex h-full w-full flex-col gap-4">
+    <article class="m-news-card flex flex-col gap-4">
       <div
         class="m-news-card__image-container h-[236.25px] w-full overflow-hidden rounded-lg xs:h-[236.25px] md:h-47.25 desktop:h-[277.13px]"
       >
         <app-image [containerClass]="'rounded-md'"></app-image>
       </div>
 
-      <div class="m-news-card__content flex flex-col gap-4">
+      <div class="m-news-card__content flex flex-col gap-4 md:gap-4 desktop:gap-4">
         <app-date-badge></app-date-badge>
         <div
           class="min-h-52.5 xs:min-h-52.5 md:min-h-59 desktop:min-h-59 flex flex-col justify-between gap-4"

@@ -32,7 +32,7 @@ import { ImageComponent } from '../../atoms/image/image.component';
             class="m-hero-card__description text-base leading-6 font-normal tracking-normal text-text-main"
           >
             {{ description }}
-            <span class="hidden desktop:inline">{{ desktopDescription }}</span>
+            <span class="hidden desktop:inline-block">{{ desktopDescription }}</span>
           </p>
         </div>
 

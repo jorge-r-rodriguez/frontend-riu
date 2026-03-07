@@ -18,9 +18,12 @@ import { CommonModule } from '@angular/common';
       <img
         *ngIf="src"
         [src]="src"
+        [attr.srcset]="srcset || null"
+        [attr.sizes]="sizes || null"
         [alt]="alt"
         class="a-image__img relative z-20 h-full w-full object-cover"
-        loading="lazy"
+        [loading]="loading"
+        decoding="async"
       />
       <div
         class="a-image__overlay pointer-events-none absolute inset-0 z-30 flex h-full w-full flex-col justify-end"
@@ -35,6 +38,9 @@ import { CommonModule } from '@angular/common';
 })
 export class ImageComponent {
   @Input() src: string = '';
+  @Input() srcset: string = '';
+  @Input() sizes: string = '';
   @Input() alt: string = 'Placeholder image';
   @Input() containerClass: string = '';
+  @Input() loading: 'lazy' | 'eager' = 'lazy';
 }

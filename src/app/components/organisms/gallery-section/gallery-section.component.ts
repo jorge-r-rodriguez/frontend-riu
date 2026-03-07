@@ -11,9 +11,9 @@ import { GalleryCardComponent } from '../../molecules/gallery-card/gallery-card.
       class="o-gallery-section flex flex-row justify-center bg-white px-5 py-8 xs:px-5 xs:py-8 md:px-8 md:py-12 desktop:px-8 desktop:py-24"
     >
       <div class="w-full max-w-385.5 flex flex-col gap-12">
-        <div class="o-gallery-section__header w-full space-y-6">
+        <header class="o-gallery-section__header w-full space-y-6">
           <h2
-            class="o-gallery-section__title text-3xl leading-8 font-bold tracking-normal text-black md:text-5xl md:leading-14.5 desktop:text-5xl desktop:leading-14.5"
+            class="o-gallery-section__title text-3xl leading-8 font-bold tracking-normal text-black xs:text-3xl xs:leading-8 md:text-5xl md:leading-14.5 desktop:text-5xl desktop:leading-14.5"
           >
             Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.
           </h2>
@@ -30,14 +30,17 @@ import { GalleryCardComponent } from '../../molecules/gallery-card/gallery-card.
             vel euismod erat placerat, in iaculis arcu eros, eget tempus orci
             facilisis id.
           </p>
-        </div>
+        </header>
 
         <div class="o-gallery-section__slider w-full overflow-hidden">
-          <div class="flex w-full gap-8 overflow-x-auto snap-x snap-mandatory">
-            <div *ngFor="let item of galleryCards" class="shrink-0 snap-start">
+          <ul class="flex w-full gap-8 overflow-x-auto snap-x snap-mandatory">
+            <li
+              *ngFor="let item of galleryCards"
+              class="shrink-0 snap-start list-none"
+            >
               <app-gallery-card></app-gallery-card>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
