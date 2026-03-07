@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   template: `
     <div class="a-search relative w-full xs:w-full md:w-75 desktop:w-75">
       <img
-        src="image/search.svg"
+        src="assets/image/search.svg"
         alt="Search Icon"
         class="a-search__icon pointer-events-none absolute inset-y-0 left-0 my-auto ml-4 h-4 w-4"
       />

@@ -33,7 +33,7 @@ import { ImageComponent } from '../../atoms/image/image.component';
               class="inline-block text-base leading-6 font-bold tracking-normal"
               >Lorem ipsum</span
             >
-            <img src="image/download.svg" alt="Download Icon" class="h-6 w-6" />
+            <img src="assets/image/download.svg" alt="Download Icon" class="h-6 w-6" />
           </div>
         </div>
       </app-image>

@@ -8,7 +8,7 @@ import { CommonModule } from '@angular/common';
   template: `
     <div class="a-date-badge flex gap-2">
       <img
-        src="image/calendar.svg"
+        src="assets/image/calendar.svg"
         alt="Calendar Icon"
         class="a-date-badge__icon size-6"
       />
