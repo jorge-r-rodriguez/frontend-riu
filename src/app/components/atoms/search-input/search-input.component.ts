@@ -6,8 +6,13 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   template: `
-    <form role="search" class="a-search relative w-full xs:w-full md:w-75 desktop:w-75">
-      <label for="search-input" class="sr-only">Search Content</label>
+    <form
+      role="search"
+      class="a-search relative w-full xs:w-full md:w-75 desktop:w-75"
+      aria-label="Buscar contenido"
+      (submit)="$event.preventDefault()"
+    >
+      <label for="search-input" class="sr-only">Buscar contenido</label>
       <div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none">
         <img
           src="assets/image/search.svg"
@@ -19,7 +24,7 @@ import { CommonModule } from '@angular/common';
       <input
         type="search"
         id="search-input"
-        class="a-search__input h-10 w-full rounded-lg border-none bg-section-bg pl-12 pr-4 text-base text-text-main outline-none transition-all focus:ring-2 focus:ring-black/50"
+        class="a-search__input h-10 w-full rounded-lg border-none bg-section-bg pl-12 pr-4 text-base text-text-main outline-none transition-all focus:ring-2 focus:ring-black/50 focus-visible:ring-2 focus-visible:ring-black/50"
         placeholder=" "
         aria-label="Buscar noticias"
       />

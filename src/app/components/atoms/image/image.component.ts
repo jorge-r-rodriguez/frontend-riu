@@ -12,6 +12,7 @@ import { CommonModule } from '@angular/common';
     >
       <span
         *ngIf="!src"
+        aria-hidden="true"
         class="a-image__placeholder absolute z-10 text-text-img-placeholder uppercase leading-none"
         >IMAGE</span
       >

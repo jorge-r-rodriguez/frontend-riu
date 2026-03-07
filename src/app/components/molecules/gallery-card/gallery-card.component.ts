@@ -28,7 +28,8 @@ import { ImageComponent } from '../../atoms/image/image.component';
           </header>
           <button
             type="button"
-            class="m-gallery-card__link flex flex-row items-center gap-1 text-white"
+            aria-label="Abrir recurso Lorem ipsum"
+            class="m-gallery-card__link flex flex-row items-center gap-1 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black/30 rounded-sm"
           >
             <span
               class="inline-block text-base leading-6 font-bold tracking-normal"

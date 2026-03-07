@@ -23,11 +23,11 @@ import { ImageComponent } from '../../atoms/image/image.component';
       >
         <div class="m-hero-card__top flex flex-col gap-4">
           <app-date-badge></app-date-badge>
-          <h2
+          <h1
             class="m-hero-card__title text-2xl leading-7 font-bold tracking-normal text-text-main"
           >
             {{ title }}
-          </h2>
+          </h1>
           <p
             class="m-hero-card__description text-base leading-6 font-normal tracking-normal text-text-main"
           >
