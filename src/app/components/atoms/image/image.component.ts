@@ -40,7 +40,7 @@ import { CommonModule } from '@angular/common';
   styles: [``],
 })
 export class ImageComponent {
-  @Input() src: string = '/assets/image/image.png';
+  @Input() src: string = 'assets/image/image.png';
   @Input() srcset: string = '';
   @Input() sizes: string = '';
   @Input() alt: string = 'Imagen del contenido';
