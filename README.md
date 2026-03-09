@@ -2,7 +2,7 @@
 
 Maquetacion del challenge de RIU desarrollada con Angular y Tailwind CSS.
 
-## Demo
+## Demo Online
 
 https://jorge-r-rodriguez.github.io/frontend-riu/
 
@@ -78,6 +78,20 @@ La salida de produccion se genera en:
 dist/challenge-riu/browser
 ```
 
+## Deploy
+
+Build para GitHub Pages:
+
+```bash
+npm run build -- --configuration production --base-href "https://jorge-r-rodriguez.github.io/frontend-riu/"
+```
+
+Publicacion en `gh-pages`:
+
+```bash
+npx angular-cli-ghpages --branch gh-pages --dir="dist/challenge-riu/browser"
+```
+
 ## Scripts disponibles
 
 ```bash
@@ -103,3 +117,6 @@ src/
 - Los assets estaticos se sirven desde `public/`.
 - Las tipografias locales se cargan desde `public/assets/fonts`.
 - GitHub Pages publica desde la rama `gh-pages`.
+- La prueba esta enfocada en maquetacion y presentacion visual.
+- No se implementa logica de negocio ni gestion avanzada de estado.
+- Los elementos de navegacion incluidos actuan como placeholder para la demo.
