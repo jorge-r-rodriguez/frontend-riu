@@ -15,7 +15,11 @@ import { ImageComponent } from '../../atoms/image/image.component';
       <div
         class="m-hero-card__image-container h-[200.25px] w-full overflow-hidden rounded-lg md:h-90 desktop:h-104"
       >
-        <app-image [containerClass]="'rounded-md'"></app-image>
+        <app-image
+          [containerClass]="'rounded-md'"
+          [loading]="'eager'"
+          [fetchPriority]="'high'"
+        ></app-image>
       </div>
 
       <div

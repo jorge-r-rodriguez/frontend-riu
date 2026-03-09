@@ -22,6 +22,7 @@ import { CommonModule } from '@angular/common';
           [src]="src"
           [attr.srcset]="srcset || null"
           [attr.sizes]="sizes || null"
+          [attr.fetchpriority]="fetchPriority"
           [alt]="alt"
           class="a-image__img relative z-20 h-full w-full object-cover"
           [loading]="loading"
@@ -46,4 +47,5 @@ export class ImageComponent {
   @Input() alt: string = 'Imagen del contenido';
   @Input() containerClass: string = '';
   @Input() loading: 'lazy' | 'eager' = 'lazy';
+  @Input() fetchPriority: 'high' | 'low' | 'auto' = 'auto';
 }
