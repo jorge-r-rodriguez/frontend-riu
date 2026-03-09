@@ -105,11 +105,51 @@ npm test
 
 ```text
 src/
+  index.html
+  main.ts
+  styles.css
   app/
+    app.config.ts
+    app.html
+    app.routes.ts
+    app.scss
+    app.spec.ts
+    app.ts
     components/
       atoms/
+        button/
+          button.component.ts
+        date-badge/
+          date-badge.component.ts
+        image/
+          image.component.ts
+        search-input/
+          search-input.component.ts
       molecules/
+        gallery-card/
+          gallery-card.component.ts
+        hero-card/
+          hero-card.component.ts
+        news-card/
+          news-card.component.ts
       organisms/
+        gallery-section/
+          gallery-section.component.ts
+        header-section/
+          header-section.component.ts
+        news-section/
+          news-section.component.ts
+public/
+  favicon.ico
+  assets/
+    fonts/
+      fig-tree/
+      inter/
+    image/
+      calendar.svg
+      download.svg
+      image.png
+      search.svg
 ```
 
 ## Notas
