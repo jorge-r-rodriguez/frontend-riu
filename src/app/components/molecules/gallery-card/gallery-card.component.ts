@@ -1,11 +1,12 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { RouterLink } from '@angular/router';
 import { ImageComponent } from '../../atoms/image/image.component';
 
 @Component({
   selector: 'app-gallery-card',
   standalone: true,
-  imports: [CommonModule, ImageComponent],
+  imports: [CommonModule, RouterLink, ImageComponent],
   template: `
     <article
       class="m-gallery-card relative overflow-hidden rounded-lg w-71 xs:w-71 md:w-90 desktop:w-[361.5px] h-94.5 xs:h-94.5 md:h-120 desktop:h-120.5"
@@ -28,8 +29,9 @@ import { ImageComponent } from '../../atoms/image/image.component';
           </header>
           <button
             type="button"
+            routerLink="/"
             aria-label="Abrir recurso Lorem ipsum"
-            class="m-gallery-card__link flex flex-row items-center gap-1 text-white focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black/30 rounded-sm"
+            class="m-gallery-card__link flex flex-row items-center gap-1 text-white hover:cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-black/30 rounded-sm"
           >
             <span
               class="inline-block text-base leading-6 font-bold tracking-normal"
