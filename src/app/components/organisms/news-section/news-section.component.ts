@@ -34,7 +34,7 @@ import { SearchInputComponent } from '../../atoms/search-input/search-input.comp
           aria-label="Listado de noticias"
           class="o-news-section__grid grid grid-cols-1 gap-8 xs:grid-cols-1 md:grid-cols-2 desktop:grid-cols-3"
         >
-          @for (item of newsCards; track item.title + item.visibility) {
+          @for (item of newsCards; track $index) {
             <li
               class="list-none"
               [ngClass]="item.visibility"
